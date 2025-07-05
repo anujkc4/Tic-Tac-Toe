@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-This is a game
+This is javascript based game played between two players
