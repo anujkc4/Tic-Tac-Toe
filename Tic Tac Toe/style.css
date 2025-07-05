@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #003049;
+  color: #fdf0d5;
+}
+
+h1{
+  text-decoration: underline;
+  text-align: center;
+  position: relative;
+  top: 5rem;
+  color: #b6a4a4;
+
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.boxes {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  background-color: #669bbc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 4%;
+  padding: 4%;
+}
+
+button {
+  flex: 0 0 30%;
+  aspect-ratio: 1 / 1;
+  font-size: 3rem;
+  border: none;
+  border-radius: 10px;
+  color: #010101;
+  background-color: #fdf0d5;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fdf0d5;
+  color: #003049;
+  transform: scale(1.05);
+}
+
+button:active {
+  animation: pressEffect 0.2s ease forwards;
+}
+
+@keyframes pressEffect {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 320px) {
+  .boxes {
+    gap: 3%;
+    padding: 3%;
+  }
+
+  button {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+}
+
+#resetButton{
+  height: 3rem;
+  width: 25rem;
+  font-size: 16px;
+}
